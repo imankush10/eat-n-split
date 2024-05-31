@@ -8,3 +8,7 @@
 - [x] Add Add Friend functionality
 - [x] Make Split Bill dynamic
 - [x] Add Split Bill function
+
+### Bill Tracker
+
+This Bill tracker web app have well defined components. I'm seriously proud of the utilization of components in this one.
