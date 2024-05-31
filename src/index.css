@@ -1,5 +1,5 @@
 :root {
-  --color-lightest: #74823c;
+  --color-lightest: #555;
   --color-light: #ffe8cc;
   --color-medium: #ffa94d;
   --color-dark: #ff922b;
@@ -113,7 +113,6 @@ form {
   display: grid;
   align-items: center;
   gap: 1.2rem;
-
   background-color: var(--color-lightest);
   border-radius: 7px;
 }
@@ -141,7 +140,7 @@ label::first-letter {
 input,
 select {
   font-family: inherit;
-  color: inherit;
+  color: #111;
   font-size: 1.5rem;
   padding: 0.7rem;
   text-align: center;

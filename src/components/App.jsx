@@ -1,3 +1,6 @@
+import { useState } from "react";
+import AddFriendForm from "./AddFriendForm";
+import Button from "./Button";
 import FriendList from "./FriendList";
 
 const initialFriends = [
@@ -22,11 +25,29 @@ const initialFriends = [
 ];
 
 const App = () => {
-  const friends = initialFriends;
+  const [friends, setFriends] = useState(initialFriends);
+  const [showAddFriend, setShowAddFriend] = useState(false);
+
+  function handleShowAddFriend() {
+    setShowAddFriend((prev) => !prev);
+  }
+  function handleAddFriend(newFriend) {
+    setFriends((current) => [...current, newFriend]);
+  }
+
   return (
     <div className="app">
       <div className="sidebar">
         <FriendList friends={friends} />
+        {showAddFriend && (
+          <AddFriendForm
+            onAddFriend={handleAddFriend}
+            handleShowAddFriend={handleShowAddFriend}
+          />
+        )}
+        <Button onClick={handleShowAddFriend}>
+          {showAddFriend ? "Close" : "Add Friend"}
+        </Button>
       </div>
     </div>
   );

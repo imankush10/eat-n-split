@@ -1,9 +1,10 @@
-TODOs
+### TODOs
 
-- [] Create a static Sidebar
-- [] Create a static Add Friend Form
-- [] Create a static Split Bill Form
-- [] Make Add Friend Dynamic
-- [] Add Add Friend Functionality
-- [] Make Split Bill Dynamic
-- [] Add Split Bill Functionality
+- [x] Create a static Friend list
+- [x] Create a static Add Friend form
+- [ ] Create a static Split Bill form
+- [x] Make Friend list dynamic
+- [x] Make Add Friend dynamic
+- [x] Add Add Friend functionality
+- [ ] Make Split Bill dynamic
+- [ ] Add Split Bill function

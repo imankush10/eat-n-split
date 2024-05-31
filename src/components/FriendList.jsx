@@ -12,6 +12,7 @@ const FriendList = ({ friends }) => {
     </ul>
   );
 };
+
 function Friend({ friend }) {
   return (
     <>
