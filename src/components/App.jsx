@@ -74,6 +74,7 @@ const App = () => {
           selected={selected}
           handleSplitBill={handleSplitBill}
           handleSelect={handleSelect}
+          key={select.id}
         />
       )}
     </div>
